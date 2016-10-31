@@ -4,65 +4,19 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar Controller-->
+        <!--Main View Controller-->
         <scene sceneID="7JK-OB-Tc5">
             <objects>
-                <tabBarController id="0Uy-bY-9pC" sceneMemberID="viewController">
+                <tabBarController id="0Uy-bY-9pC" customClass="CJMainViewController" customModule="DouYuZhiBo" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="TBm-fW-gD7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
-                    <connections>
-                        <segue destination="H0s-Jp-BDV" kind="relationship" relationship="viewControllers" id="wyp-wj-6ce"/>
-                        <segue destination="8sE-nD-4m1" kind="relationship" relationship="viewControllers" id="YFT-KQ-yJj"/>
-                        <segue destination="26J-Jx-ETL" kind="relationship" relationship="viewControllers" id="Yf3-ZL-vlY"/>
-                        <segue destination="EZf-Ii-Qc4" kind="relationship" relationship="viewControllers" id="pwO-Dr-Hym"/>
-                    </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rl8-cH-tZh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-537" y="996"/>
-        </scene>
-        <!--Home-->
-        <scene sceneID="gBf-iG-ZLy">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Home" id="H0s-Jp-BDV" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Mse-s1-qfl"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wTe-dO-cSX" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="271" y="721"/>
-        </scene>
-        <!--Live-->
-        <scene sceneID="S1E-M5-OvD">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Live" id="8sE-nD-4m1" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="4G8-ao-dos"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rVV-HK-rMW" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="271.5" y="866"/>
-        </scene>
-        <!--Follow-->
-        <scene sceneID="Xpv-DV-0Ka">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Follow" id="26J-Jx-ETL" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="k9h-Ic-IKn"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="c7K-8a-qOg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="273" y="1044"/>
-        </scene>
-        <!--Profile-->
-        <scene sceneID="J8n-I3-sqP">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Profile" id="EZf-Ii-Qc4" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="wZZ-Fs-nFz"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x0K-vm-wj6" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="271" y="1232"/>
         </scene>
     </scenes>
 </document>
