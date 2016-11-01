@@ -19,6 +19,10 @@
 		CCED1DF11DC8373A000E2464 /* CJMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCED1DEE1DC8373A000E2464 /* CJMainViewController.swift */; };
 		CCED1DF31DC83779000E2464 /* CJHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCED1DF21DC83779000E2464 /* CJHomeViewController.swift */; };
 		CCED1DF61DC83FD5000E2464 /* UIBarButtonItem-Extension(CJ).swift in Sources */ = {isa = PBXBuildFile; fileRef = CCED1DF51DC83FD5000E2464 /* UIBarButtonItem-Extension(CJ).swift */; };
+		CCED1DF81DC849C0000E2464 /* CJPageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCED1DF71DC849C0000E2464 /* CJPageTitleView.swift */; };
+		CCED1DFA1DC84C1A000E2464 /* CJCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCED1DF91DC84C1A000E2464 /* CJCommon.swift */; };
+		CCED1DFC1DC86CCC000E2464 /* CJPageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCED1DFB1DC86CCC000E2464 /* CJPageContentView.swift */; };
+		CCED1DFE1DC87073000E2464 /* UIcolor-Extension(CJ).swift in Sources */ = {isa = PBXBuildFile; fileRef = CCED1DFD1DC87073000E2464 /* UIcolor-Extension(CJ).swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +39,10 @@
 		CCED1DEE1DC8373A000E2464 /* CJMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CJMainViewController.swift; sourceTree = "<group>"; };
 		CCED1DF21DC83779000E2464 /* CJHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CJHomeViewController.swift; sourceTree = "<group>"; };
 		CCED1DF51DC83FD5000E2464 /* UIBarButtonItem-Extension(CJ).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension(CJ).swift"; sourceTree = "<group>"; };
+		CCED1DF71DC849C0000E2464 /* CJPageTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CJPageTitleView.swift; sourceTree = "<group>"; };
+		CCED1DF91DC84C1A000E2464 /* CJCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CJCommon.swift; sourceTree = "<group>"; };
+		CCED1DFB1DC86CCC000E2464 /* CJPageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CJPageContentView.swift; sourceTree = "<group>"; };
+		CCED1DFD1DC87073000E2464 /* UIcolor-Extension(CJ).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIcolor-Extension(CJ).swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +139,7 @@
 		CC9B9D351DC74C13003EDA71 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				CCED1DF91DC84C1A000E2464 /* CJCommon.swift */,
 				CCED1DF41DC83F74000E2464 /* Extension */,
 			);
 			path = Tools;
@@ -169,6 +178,8 @@
 		CCED1DEC1DC836ED000E2464 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CCED1DF71DC849C0000E2464 /* CJPageTitleView.swift */,
+				CCED1DFB1DC86CCC000E2464 /* CJPageContentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -199,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				CCED1DF51DC83FD5000E2464 /* UIBarButtonItem-Extension(CJ).swift */,
+				CCED1DFD1DC87073000E2464 /* UIcolor-Extension(CJ).swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -282,9 +294,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCED1DF61DC83FD5000E2464 /* UIBarButtonItem-Extension(CJ).swift in Sources */,
+				CCED1DFA1DC84C1A000E2464 /* CJCommon.swift in Sources */,
 				CCED1DF31DC83779000E2464 /* CJHomeViewController.swift in Sources */,
+				CCED1DFE1DC87073000E2464 /* UIcolor-Extension(CJ).swift in Sources */,
 				CCED1DF11DC8373A000E2464 /* CJMainViewController.swift in Sources */,
 				CC9B9D1E1DC746A3003EDA71 /* AppDelegate.swift in Sources */,
+				CCED1DFC1DC86CCC000E2464 /* CJPageContentView.swift in Sources */,
+				CCED1DF81DC849C0000E2464 /* CJPageTitleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
