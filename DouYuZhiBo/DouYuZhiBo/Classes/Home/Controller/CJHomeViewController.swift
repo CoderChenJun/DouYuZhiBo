@@ -16,18 +16,21 @@ private let CJ_TitleViewH : CGFloat = 40
 class CJHomeViewController: UIViewController {
     
     // MARK - 懒加载属性 - CJPageTitleView
-    private lazy var pageTitleView : CJPageTitleView = {
+    private lazy var pageTitleView : CJPageTitleView = {[weak self] in
         
         let titleFrame = CGRect(x: 0, y: CJ_StatusBarH + CJ_NavigationBarH, width: CJ_ScreenW, height: CJ_TitleViewH)
         let titles = ["推荐", "游戏", "娱乐", "趣玩"]
         let titleView = CJPageTitleView(frame: titleFrame, titles: titles)
+        
+        titleView.delegate = self
+        
         return titleView
         
     }()
     
     
     // MARK - 懒加载属性 - CJPageTitleView
-    private lazy var pageContentView : CJPageContentView = {
+    private lazy var pageContentView : CJPageContentView = {[weak self] in
         
         // 1.确定内容的frame
         let contentH = CJ_ScreenH - CJ_StatusBarH - CJ_NavigationBarH - CJ_TitleViewH
@@ -44,15 +47,11 @@ class CJHomeViewController: UIViewController {
         
         let contentView = CJPageContentView(frame: contentFrame, childVcs: childVcs, parentViewController: self)
         
+        contentView.delegate = self
+        
         return contentView
         
     }()
-    
-    
-    
-    
-    
-    
     
     
     // MARK - 系统回调函数
@@ -115,12 +114,31 @@ extension CJHomeViewController {
     }
     
     
-    
-    
 }
 
 
 
+
+
+
+
+// MARK - 遵守CJPageTitleViewDelegate协议
+extension CJHomeViewController : CJPageTitleViewDelegate {
+    
+    func pageTitleView(titleView: CJPageTitleView, selectedIndex index: Int) {
+        pageContentView.setCurrentIndex(index)
+    }
+}
+
+
+
+// MARK - 遵守CJPageContentViewDelegate协议
+extension CJHomeViewController : CJPageContentViewDelegate {
+    
+    func pageContentView(contentView: CJPageContentView, progress: CGFloat, sourceIndex: Int, targetIndex: Int) {
+        pageTitleView.setTitleWithProgress(progress, sourceIndex: sourceIndex, targetIndex: targetIndex)
+    }
+}
 
 
 
